@@ -1,0 +1,105 @@
+.cs_history {
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+}
+
+.cs_slider {
+    position: relative;
+    width: 100%;
+}
+
+.cs_slider_wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+.cs_slide {
+    flex: 0 0 auto;
+    padding: 0 12px;
+    width: 300px; /* Fixed width for slides */
+}
+
+
+.cs_card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cs_card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.cs_card:hover img {
+    transform: scale(1.05);
+}
+
+.cs_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .cs_slide {
+        padding: 0 1px;
+        width: 250px; /* Set smaller fixed width for mobile */
+    }
+    
+    .cs_card {
+        transform: scale(0.9); /* Make cards 20% smaller on mobile */
+    }
+    
+    .cs_card img {
+        max-width: 100%; /* Ensure image scales with card */
+    }
+}
+
+
+.cs_slider_wrapper {
+    animation: slide 10s linear infinite;
+}
+
+.cs_slider_wrapper:hover {
+    animation-play-state: paused;
+}
+
+.cs_slider_wrapper:not(:hover) {
+    animation-play-state: running;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cs_slider_wrapper {
+        animation: slideMobile 8s linear infinite;
+    }
+
+    .cs_slider_wrapper:hover {
+        animation-play-state: paused;
+    }
+
+    .cs_slider_wrapper:not(:hover) {
+        animation-play-state: running;
+    }
+
+    @keyframes slideMobile {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+}
