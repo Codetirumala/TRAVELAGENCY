@@ -15,7 +15,9 @@
     <meta name="geo.position" content="20.5937;78.9629">
     <meta name="ICBM" content="20.5937, 78.9629">
 
- 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/tourdenicon.png">
+    
     <meta property="og:type" content="website">
     <meta property="og:title" content="Best Tour Advisor Near Me | Tourden - Your Local Travel Expert">
     <meta property="og:description" content="Find the best tour advisor near you. Tourden offers personalized travel planning, luxury packages, and local expertise. IATA certified travel advisor in your area.">
@@ -76,6 +78,8 @@
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/portfolio.css">
     <link rel="stylesheet" href="style/services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style/essential-india.css">
 </head>
 <style>
     body {
@@ -259,57 +263,10 @@
 
 
     </section>
-    <!-- End Collection Section -->
-
-    <!-- services -->
-    <section class="services" style="padding: 40px 20px;">
-        <div style="text-align: center; margin-bottom: 40px;">
-            <h2 class="heading-main">Premium Travel Services by Tourden</h2>
-            <p style="color: #535353; max-width: 800px; margin: 20px auto; line-height: 1.6;">
-                Discover our comprehensive range of travel services designed to make your journey memorable and hassle-free.
-            </p>
-        </div>
-
-        <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto;">
-            <div class="cs_card" style="background: rgba(255,255,255,0.05); border-radius: 20px; padding: 30px; backdrop-filter: blur(10px); transition: transform 0.3s ease;">
-                <img src="assets/icons/luxury.png" alt="Luxury Travel Planning" style="width: 60px; height: 60px; margin-bottom: 20px;">
-                <h3 style="color: #2D2D2D; font-size: 1.5rem; margin-bottom: 15px;">Luxury Travel Planning</h3>
-                <p style="color: #535353; line-height: 1.6;">Experience world-class luxury with our curated travel packages.</p>
-            </div>
-
-            <div class="cs_card" style="background: rgba(255,255,255,0.05); border-radius: 20px; padding: 30px; backdrop-filter: blur(10px); transition: transform 0.3s ease;">
-                <img src="assets/icons/international.png" alt="International Tours" style="width: 60px; height: 60px; margin-bottom: 20px;">
-                <h3 style="color: #2D2D2D; font-size: 1.5rem; margin-bottom: 15px;">International Tours</h3>
-                <p style="color: #535353; line-height: 1.6;">Explore global destinations with our expertly crafted international packages.</p>
-            </div>
-
-            <div class="cs_card" style="background: rgba(255,255,255,0.05); border-radius: 20px; padding: 30px; backdrop-filter: blur(10px); transition: transform 0.3s ease;">
-                <img src="assets/icons/domestic.png" alt="Domestic Tourism" style="width: 60px; height: 60px; margin-bottom: 20px;">
-                <h3 style="color: #2D2D2D; font-size: 1.5rem; margin-bottom: 15px;">Domestic Tourism</h3>
-                <p style="color: #535353; line-height: 1.6;">Discover India's rich heritage with our specialized domestic tours.</p>
-            </div>
-
-            <div class="cs_card" style="background: rgba(255,255,255,0.05); border-radius: 20px; padding: 30px; backdrop-filter: blur(10px); transition: transform 0.3s ease;">
-                <img src="assets/icons/corporate.png" alt="Corporate Travel Solutions" style="width: 60px; height: 60px; margin-bottom: 20px;">
-                <h3 style="color: #2D2D2D; font-size: 1.5rem; margin-bottom: 15px;">Corporate Travel</h3>
-                <p style="color: #535353; line-height: 1.6;">Comprehensive travel management solutions for businesses.</p>
-            </div>
-        </div>
-    </section>
-    <!-- Stacking Cards Section -->
     
-    <!-- Trust Indicators Section -->
-    <section style="padding: 60px 20px; text-align: center;">
-        <h2 style="color: #2D2D2D; margin-bottom: 40px;">Trusted by Global Travel Organizations</h2>
-        <div style="display: flex; justify-content: center; gap: 40px; align-items: center; flex-wrap: wrap;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/IATA_logo.svg" alt="IATA Certified Travel Advisor" style="height: 40px;">
-            <img src="https://www.traveldailymedia.com/assets/2020/02/unwto.png" alt="UNWTO Member" style="height: 40px;">
-            <img src="https://www.adventuretravel.biz/wp-content/uploads/2018/03/ATTA_Member_Badge_H_Wht.png" alt="Adventure Travel Trade Association Member" style="height: 40px;">
-        </div>
-        <p style="color: #535353; margin-top: 20px;">
-            Tourden is an IATA-certified travel advisor, ensuring the highest standards of service and reliability in travel planning.
-        </p>
-    </section>
+      
+
+    
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
@@ -520,11 +477,40 @@
     </script>
     </section>
 
+    <!-- Add this after your portfolio section -->
+    <section class="essential-india">
+        <h2>Essential India</h2>
+        <p class="subtitle">Pick a category to filter your recs</p>
+        
+        <div class="filter-buttons">
+            <button class="filter-button active" data-category="essentials">
+                <i class="fas fa-star"></i>
+                Essentials
+            </button>
+            <button class="filter-button" data-category="travellers-choice">
+                <i class="fas fa-compass"></i>
+                Travellers' Choice
+            </button>
+            <button class="filter-button" data-category="family-friendly">
+                <i class="fas fa-users"></i>
+                Family friendly
+            </button>
+            <button class="filter-button" data-category="hidden-gems">
+                <i class="fas fa-gem"></i>
+                Hidden gems
+            </button>
+            <button class="filter-button" data-category="museums">
+                <i class="fas fa-landmark"></i>
+                Museums
+            </button>
+        </div>
 
+        <div class="destinations-grid" id="destinations-grid">
+            <!-- Content will be dynamically inserted here -->
+        </div>
+    </section>
 
-
-
- <!-- navbar.js -->
+    <!-- navbar.js -->
     <script>
         const hamburger = document.querySelector('.hamburger');
         const navbarMenu = document.querySelector('.navbar-menu');
@@ -543,11 +529,378 @@
         });
     </script>
 
+    <!-- Add this before closing body tag -->
+    <script>
+    // Destination data array
+    const destinationsData = [
+        // Essentials Category
+        {
+            category: "essentials",
+            name: "Taj Mahal",
+            image: "./assets/destinations/tajmahal.jpg",
+            rating: 4.9,
+            reviews: "32,399"
+        },
+        {
+            category: "essentials",
+            name: "Varanasi",
+            image: "./assets/destinations/varanasi.jpg",
+            rating: 4.2,
+            reviews: "30,359"
+        },
+        {
+            category: "essentials",
+            name: "Ranthambore",
+            image: "./assets/destinations/rantha.jpg",
+            rating: 4.5,
+            reviews: "31,359"
+        },
+        {
+            category: "essentials",
+            name: "Palolem",
+            image: "./assets/destinations/palolem.jpg",
+            rating: 4.8,
+            reviews: "36,543"
+        },
+        {
+            category: "essentials",
+            name: "Konark",
+            image: "./assets/destinations/konark.jpg",
+            rating: 4.8,
+            reviews: "28,239"
+        },
+        {
+            category: "essentials",
+            name: "Jaipur",
+            image: "./assets/destinations/jaipur.jpg",
+            rating: 4.7,
+            reviews: "29,876"
+        },
+        {
+            category: "essentials",
+            name: "Kerala Backwaters",
+            image: "./assets/destinations/kerala.jpg",
+            rating: 4.9,
+            reviews: "27,654"
+        },
+        {
+            category: "essentials",
+            name: "Udaipur",
+            image: "./assets/destinations/udaipur.jpg",
+            rating: 4.6,
+            reviews: "25,432"
+        },
 
+        // Travellers Choice Category
+        {
+            category: "travellers-choice",
+            name: "Qutub Minar",
+            image: "./assets/destinations/qutubminar.jpg",
+            rating: 4.9,
+            reviews: "32,399"
+        },
+        {
+            category: "travellers-choice",
+            name: "Goa Beaches",
+            image: "./assets/destinations/goa.jpg",
+            rating: 4.7,
+            reviews: "45,678"
+        },
+        {
+            category: "travellers-choice",
+            name: "Ladakh",
+            image: "./assets/destinations/ladakh.jpg",
+            rating: 4.8,
+            reviews: "23,456"
+        },
+        {
+            category: "travellers-choice",
+            name: "Mysore Palace",
+            image: "./assets/destinations/mysore.jpg",
+            rating: 4.6,
+            reviews: "19,876"
+        },
+        {
+            category: "travellers-choice",
+            name: "Darjeeling",
+            image: "./assets/destinations/darjeeling.jpg",
+            rating: 4.5,
+            reviews: "21,345"
+        },
+        {
+            category: "travellers-choice",
+            name: "Amritsar",
+            image: "./assets/destinations/amritsar.jpg",
+            rating: 4.7,
+            reviews: "28,765"
+        },
+        {
+            category: "travellers-choice",
+            name: "Rishikesh",
+            image: "./assets/destinations/rishikesh.jpg",
+            rating: 4.6,
+            reviews: "24,567"
+        },
+        {
+            category: "travellers-choice",
+            name: "Hampi",
+            image: "./assets/destinations/hampi.jpg",
+            rating: 4.8,
+            reviews: "22,345"
+        },
 
+        // Family Friendly Category
+        {
+            category: "family-friendly",
+            name: "India Gate",
+            image: "./assets/destinations/indiagate.jpg",
+            rating: 4.7,
+            reviews: "25,399"
+        },
+        {
+            category: "family-friendly",
+            name: "Imagica Theme Park",
+            image: "./assets/destinations/imagica.jpg",
+            rating: 4.5,
+            reviews: "18,765"
+        },
+        {
+            category: "family-friendly",
+            name: "Ooty",
+            image: "./assets/destinations/ooty.jpg",
+            rating: 4.6,
+            reviews: "21,234"
+        },
+        {
+            category: "family-friendly",
+            name: "Munnar",
+            image: "./assets/destinations/munnar.jpg",
+            rating: 4.8,
+            reviews: "23,456"
+        },
+        {
+            category: "family-friendly",
+            name: "Agra Fort",
+            image: "./assets/destinations/agrafort.jpg",
+            rating: 4.5,
+            reviews: "19,876"
+        },
+        {
+            category: "family-friendly",
+            name: "Shimla",
+            image: "./assets/destinations/shimla.jpg",
+            rating: 4.7,
+            reviews: "24,567"
+        },
+        {
+            category: "family-friendly",
+            name: "Manali",
+            image: "./assets/destinations/manali.jpg",
+            rating: 4.6,
+            reviews: "26,789"
+        },
+        {
+            category: "family-friendly",
+            name: "Nainital",
+            image: "./assets/destinations/nainital.jpg",
+            rating: 4.4,
+            reviews: "20,123"
+        },
 
+        // Hidden Gems Category
+        {
+            category: "hidden-gems",
+            name: "Hampi",
+            image: "./assets/destinations/hampi.jpg",
+            rating: 4.6,
+            reviews: "15,399"
+        },
+        {
+            category: "hidden-gems",
+            name: "Ziro Valley",
+            image: "./assets/destinations/ziro.jpg",
+            rating: 4.7,
+            reviews: "8,765"
+        },
+        {
+            category: "hidden-gems",
+            name: "Majuli",
+            image: "./assets/destinations/majuli.jpg",
+            rating: 4.5,
+            reviews: "7,654"
+        },
+        {
+            category: "hidden-gems",
+            name: "Tawang",
+            image: "./assets/destinations/tawang.jpg",
+            rating: 4.8,
+            reviews: "9,876"
+        },
+        {
+            category: "hidden-gems",
+            name: "Spiti Valley",
+            image: "./assets/destinations/spiti.jpg",
+            rating: 4.9,
+            reviews: "12,345"
+        },
+        {
+            category: "hidden-gems",
+            name: "Khajjiar",
+            image: "./assets/destinations/khajjiar.jpg",
+            rating: 4.6,
+            reviews: "10,234"
+        },
+        {
+            category: "hidden-gems",
+            name: "Dhanushkodi",
+            image: "./assets/destinations/dhanushkodi.jpg",
+            rating: 4.4,
+            reviews: "6,789"
+        },
+        {
+            category: "hidden-gems",
+            name: "Valley of Flowers",
+            image: "./assets/destinations/valleyofflowers.jpg",
+            rating: 4.8,
+            reviews: "11,234"
+        },
 
+        // Museums Category
+        {
+            category: "museums",
+            name: "National Museum",
+            image: "./assets/destinations/national-museum.jpg",
+            rating: 4.5,
+            reviews: "12,399"
+        },
+        {
+            category: "museums",
+            name: "Salar Jung Museum",
+            image: "./assets/destinations/salarjung.jpg",
+            rating: 4.6,
+            reviews: "15,678"
+        },
+        {
+            category: "museums",
+            name: "Indian Museum Kolkata",
+            image: "./assets/destinations/indianmuseum.jpg",
+            rating: 4.4,
+            reviews: "11,234"
+        },
+        {
+            category: "museums",
+            name: "Chhatrapati Shivaji Museum",
+            image: "./assets/destinations/csmvs.jpg",
+            rating: 4.7,
+            reviews: "14,567"
+        },
+        {
+            category: "museums",
+            name: "Albert Hall Museum",
+            image: "./assets/destinations/alberthall.jpg",
+            rating: 4.5,
+            reviews: "13,456"
+        },
+        {
+            category: "museums",
+            name: "Government Museum Chennai",
+            image: "./assets/destinations/chennaimuseum.jpg",
+            rating: 4.3,
+            reviews: "10,987"
+        },
+        {
+            category: "museums",
+            name: "Calico Museum",
+            image: "./assets/destinations/calico.jpg",
+            rating: 4.6,
+            reviews: "9,876"
+        },
+        {
+            category: "museums",
+            name: "Rail Museum",
+            image: "./assets/destinations/railmuseum.jpg",
+            rating: 4.4,
+            reviews: "11,765"
+        }
+    ];
 
+    document.addEventListener('DOMContentLoaded', () => {
+        const filterButtons = document.querySelectorAll('.filter-button');
+        const destinationsGrid = document.getElementById('destinations-grid');
+
+        // Function to create destination card
+        const createDestinationCard = (destination) => {
+            return `
+                <div class="destination-card" data-category="${destination.category}">
+                    <span class="badge-2024">2024</span>
+                    <button class="like-button">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <img src="${destination.image}" 
+                         alt="${destination.name}"
+                         loading="lazy">
+                    <div class="destination-info">
+                        <h3>${destination.name}</h3>
+                        <div class="destination-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                ${destination.rating}
+                            </div>
+                            <span>${destination.reviews} reviews</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        };
+
+        // Function to filter and render destinations
+        const filterDestinations = (category) => {
+            const filteredDestinations = destinationsData.filter(dest => 
+                dest.category === category
+            );
+            
+            destinationsGrid.innerHTML = filteredDestinations
+                .map(destination => createDestinationCard(destination))
+                .join('');
+
+            // Add fade-enter class for animation
+            setTimeout(() => {
+                document.querySelectorAll('.destination-card').forEach(card => {
+                    card.classList.add('fade-enter');
+                });
+            }, 0);
+        };
+
+        // Add click event listeners to filter buttons
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                // Get the category and filter destinations
+                const category = button.getAttribute('data-category');
+                filterDestinations(category);
+            });
+        });
+
+        // Show essentials by default
+        const essentialsButton = document.querySelector('[data-category="essentials"]');
+        if (essentialsButton) {
+            essentialsButton.click();
+        }
+
+        // Add click event listener to like buttons
+        destinationsGrid.addEventListener('click', (e) => {
+            if (e.target.closest('.like-button')) {
+                const heartIcon = e.target.closest('.like-button').querySelector('i');
+                heartIcon.classList.toggle('far');
+                heartIcon.classList.toggle('fas');
+            }
+        });
+    });
+    </script>
 
 </body>
 
