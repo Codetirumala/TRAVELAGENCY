@@ -1,0 +1,106 @@
+
+    .faq-section {
+        padding: 80px 20px;
+        background: linear-gradient(135deg, #f5f0ff 0%, #e8f7ff 100%);
+    }
+
+    .faq-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .faq-header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .faq-header h2 {
+        font-size: 2.5rem;
+        color: #2d2d2d;
+        margin-bottom: 15px;
+        background: linear-gradient(135deg, #4e5bb5, #aa40fa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+
+    .faq-header p {
+        color: #666;
+        font-size: 1.1rem;
+    }
+
+    .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .faq-item {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+    }
+
+    .faq-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .faq-question {
+        padding: 20px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 600;
+        color: #2d2d2d;
+    }
+
+    .faq-toggle {
+        background: none;
+        border: none;
+        color: #aa40fa;
+        cursor: pointer;
+        padding: 5px;
+        transition: transform 0.3s ease;
+    }
+
+    .faq-toggle i {
+        font-size: 1.1rem;
+    }
+
+    .faq-answer {
+        padding: 0 25px;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        color: #666;
+        line-height: 1.6;
+    }
+
+    .faq-item.active .faq-answer {
+        padding: 0 25px 20px;
+        max-height: 200px;
+    }
+
+    .faq-item.active .faq-toggle i {
+        transform: rotate(45deg);
+    }
+
+    @media (max-width: 768px) {
+        .faq-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .faq-header h2 {
+            font-size: 2rem;
+        }
+
+        .faq-item {
+            margin: 0 10px;
+        }
+    }
+
